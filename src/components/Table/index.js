@@ -34,7 +34,7 @@ const calcTime = (start, end) => {
 const calcTotal = (days) => {
   const { hours, minutes } = days.reduce(
     (acc, cur) => {
-      const [hours, minutes] = cur.split("-");
+      const [hours, minutes] = cur.split(":");
       acc.hours += Number(hours);
       acc.minutes += Number(minutes);
       return acc;
